@@ -1,0 +1,123 @@
+{
+    "entry": {
+        "text": "Environ",
+        "code": "E00045"
+    },
+    "name": [
+        {
+            "text": "Mentha herb",
+            "code": "JP17"
+        },
+        {
+            "text": "Peppermint",
+            "code": "NF"
+        }
+    ],
+    "category": "Crude drug",
+    "component": [
+        {
+            "name": "l-Menthol",
+            "code": [
+                "CPD:C00400"
+            ],
+            "major": true
+        },
+        {
+            "name": "(-)-Menthyl acetate",
+            "code": [
+                "CPD:C09870"
+            ],
+            "major": false
+        },
+        {
+            "name": "l-Menthone",
+            "code": [
+                "CPD:C00843"
+            ],
+            "major": false
+        },
+        {
+            "name": "1,8-cineole",
+            "code": [
+                "CPD:C09844"
+            ],
+            "major": false
+        }
+    ],
+    "source": [
+        {
+            "text": "Mentha arvensis",
+            "code": [
+                "TAX:292239"
+            ]
+        },
+        {
+            "text": "Mentha haplocalyx",
+            "code": [
+                "TAX:447096"
+            ]
+        }
+    ],
+    "remark": {
+        "label": "Same as",
+        "code": "D05431"
+    },
+    "comment": {
+        "text": "Lamiaceae (mint family) Mentha arvensis aerial part Major component: l-Menthol [CPD:C00400]"
+    },
+    "brite": [
+        {
+            "name": "Therapeutic category of drugs in Japan",
+            "code": "BR:br08301",
+            "content": {
+                "name": "Crude drugs and Chinese medicine formulations",
+                "code": "5",
+                "content": {
+                    "name": "Crude drugs",
+                    "code": "510",
+                    "content": {
+                        "name": "Crude drugs",
+                        "code": "5100",
+                        "content": [
+                            {
+                                "code": "D05431",
+                                "name": [
+                                    {
+                                        "text": "Mentha herb",
+                                        "code": "JP17"
+                                    },
+                                    {
+                                        "text": "Peppermint",
+                                        "code": "NF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "name": "Classification of Japanese OTC drugs",
+            "code": "BR:br08313",
+            "content": {
+                "name": "Agents for nervous and sensory systems",
+                "content": {
+                    "code": "01",
+                    "name": "Cold remedy (oral use)",
+                    "content": [
+                        {
+                            "code": "D05431",
+                            "name": [
+                                {
+                                    "text": "Mentha herb",
+                                    "code": "JP17"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
