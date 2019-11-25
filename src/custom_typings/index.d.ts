@@ -8,22 +8,22 @@ declare namespace jest {
     }
 }
 
-interface IKEGGEnvironListItemName {
-    text: string
+interface IKEGGName {
     code?: string
+    text: string
 }
 
 interface IKEGGEnvironListItem {
     id: string
-    name: IKEGGEnvironListItemName[]
+    name: IKEGGName[]
 }
 
 interface IKEGGObject {
     entry: IKEGGEntry
     name: IKEGGName[]
-    catergory: IKEGGCategory
+    category: IKEGGCategory
     component: IKEGGComponent[]
-    source: IKEGGSource[]
+    source: IKEGGName[]
     remark: IKEGGRemark
     brite: IKEGGBriteCategory[]
 }
@@ -33,22 +33,12 @@ interface IKEGGEntry {
     text: string
 }
 
-interface IKEGGName {
-    code: string
+interface IKEGGCategory {
     text: string
 }
 
-type IKEGGCategory = string
-
-interface IKEGGComponent {
-    name: string,
-    code: string[]
+interface IKEGGComponent extends IKEGGName {
     major: boolean
-}
-
-interface IKEGGSource {
-    text: string
-    code: string[]
 }
 
 interface IKEGGRemark {
@@ -62,17 +52,11 @@ interface IKEGGComment {
 
 interface IKEGGBriteCategory {
     name: string
-    code: string
-    content: IKEGGBriteSubcategory[]
-}
-
-interface IKEGGBriteSubcategory {
-    name: string
     code?: string
-    content: IKEGGBriteSubcategory | IKEGGBriteSubCategoryContentItem[]
+    content: IKEGGBriteCategory | IKEGGBriteContentItem[]
 }
 
-interface IKEGGBriteSubCategoryContentItem {
+interface IKEGGBriteContentItem {
     name: IKEGGName[]
-    code: string
+    code?: string
 }

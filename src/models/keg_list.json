@@ -1,0 +1,24 @@
+[
+    {
+        "code": "ev:E00001",
+        "name": [
+            {
+                "text": "Coptis rhizome",
+                "code": "(JP17)"
+            }
+        ]
+    },
+    {
+        "code": "ev:E00012",
+        "name": [
+            {
+                "text": "Senna extract",
+                "code": "(JAN)"
+            },
+            {
+                "text": "Senna",
+                "code": "(USP)"
+            }
+        ]
+    }
+]

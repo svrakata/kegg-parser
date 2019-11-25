@@ -13,7 +13,9 @@
             "code": "NF"
         }
     ],
-    "category": "Crude drug",
+    "category": {
+        "text": "Crude drug"
+    },
     "component": [
         {
             "name": "l-Menthol",
@@ -60,7 +62,9 @@
     ],
     "remark": {
         "label": "Same as",
-        "code": "D05431"
+        "code": [
+            "D05431"
+        ]
     },
     "comment": {
         "text": "Lamiaceae (mint family) Mentha arvensis aerial part Major component: l-Menthol [CPD:C00400]"

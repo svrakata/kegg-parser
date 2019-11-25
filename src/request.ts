@@ -6,7 +6,6 @@ type TMethod = "GET" | "POST"
 export const request = (requestUrl: string, method: TMethod): Promise<string> => {
     // fix it
     // const { host, path } = url.parse(requestUrl)
-    console.log(method)
     return new Promise((resolve, reject) => {
         const req = http.get(requestUrl, (res) => {
             let document = ""

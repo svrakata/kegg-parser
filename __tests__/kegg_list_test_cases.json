@@ -1,0 +1,64 @@
+[
+    {
+        "id": "1",
+        "description": "Parsing keg list should split each line to label and content",
+        "input": "ev:E00001\tCoptis rhizome (JP17)",
+        "output": {
+            "label": "ev:E00001",
+            "content": "Coptis rhizome (JP17)"
+        }
+    },
+    {
+        "id": "2",
+        "description": "Parsing keg list should split each drug name from the content to node with text and code properties",
+        "input": "Belladonna extract (JP17)",
+        "output": {
+            "code": "JP17",
+            "text": "Belladonna extract"
+        }
+    },
+    {
+        "id": "3",
+        "description": "Parsing keg list should split each line content to array of nodes containing text and codes",
+        "input": "Belladonna extract (JP17); Belladonna (USP)",
+        "output": [
+            {
+                "text": "Belladonna extract",
+                "code": "JP17"
+            },
+            {
+                "text": "Belladonna",
+                "code": "USP"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "description": "Parsing keg list should return array of objects",
+        "input": "ev:E00001\tCoptis rhizome (JP17)\nev:E00012\tSenna extract (JAN); Senna (USP)",
+        "output": [
+            {
+                "id": "ev:E00001",
+                "name": [
+                    {
+                        "text": "Coptis rhizome",
+                        "code": "JP17"
+                    }
+                ]
+            },
+            {
+                "id": "ev:E00012",
+                "name": [
+                    {
+                        "text": "Senna extract",
+                        "code": "JAN"
+                    },
+                    {
+                        "text": "Senna",
+                        "code": "USP"
+                    }
+                ]
+            }
+        ]
+    }
+]

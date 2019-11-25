@@ -1,11 +1,9 @@
-import { parseList } from "./parser"
+import { parseList } from "./keggListParser"
 import { getDocument } from "./request"
 
 const load = async () => {
     const list = await getDocument("http://rest.kegg.jp/list/ENVIRON")
-    const parsedList = parseList(list)
-    console.log(parsedList)
-    // const drugsData = parsedList.map(())
+    console.log(JSON.stringify(parseList(list)))
 }
 
 load()
