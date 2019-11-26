@@ -1,7 +1,4 @@
-interface IKEGGName {
-    code?: string
-    text: string
-}
+import drugNameParser from "./drugNameParser"
 
 export const splitLine = (rawLine: string) => {
     const splitedRaw = rawLine.split("\t")
@@ -11,49 +8,12 @@ export const splitLine = (rawLine: string) => {
     }
 }
 
-export const parseDrugName = (rawDrugName: string) => {
-    let isCode = false
-    let code = ""
-    let text = ""
-    const result: IKEGGName = {
-        text: "",
-    }
-
-    for (const char of rawDrugName) {
-        if (char === "(" || char === "[") {
-            isCode = true
-            continue
-        }
-
-        if (char === ")" || char === "]") {
-            isCode = false
-            continue
-        }
-
-        if (isCode) {
-            code += char
-        } else {
-            text += char
-        }
-    }
-
-    if (code.length > 0) {
-        result.code = code
-    }
-
-    result.text = text
-
-    return result
-}
-
-
 export const parseLineContent = (rawLineContent: string) => {
     const splitedRawLineContent = rawLineContent.split(";")
-    return splitedRawLineContent.map((rawDrugName) => parseDrugName(rawDrugName))
+    return splitedRawLineContent.map((rawDrugName) => drugNameParser(rawDrugName))
 }
 
-
-export const parseList = (rawList: string) => {
+const keggListParser = (rawList: string) => {
     const trimmedRawList = rawList.trim() // removes \n,\t and whitespaces from both ends of the raw list
     const splittedLines = trimmedRawList.split("\n")
 
@@ -68,3 +28,5 @@ export const parseList = (rawList: string) => {
 
     return result
 }
+
+export default keggListParser

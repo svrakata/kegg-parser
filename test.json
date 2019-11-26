@@ -1,0 +1,391 @@
+{
+    "entry": {
+        "code": "E00001",
+        "text": "Environ"
+    },
+    "name": {
+        "text": "Coptis rhizome",
+        "code": "JP17"
+    },
+    "category": {
+        "text": "Crude drug"
+    },
+    "component": [
+        {
+            "text": "Berberine",
+            "code": "CPD:C00757",
+            "major": true
+        },
+        {
+            "text": "Palmatine",
+            "code": "CPD:C05315",
+            "major": false
+        },
+        {
+            "text": "Jateorrhizine",
+            "code": "CPD:C09553",
+            "major": false
+        },
+        {
+            "text": "Coptisine",
+            "code": "CPD:C16938",
+            "major": false
+        },
+        {
+            "text": "Worenine",
+            "code": "CPD:C17083",
+            "major": false
+        },
+        {
+            "text": "Magnoflorine",
+            "code": "CPD:C09581",
+            "major": false
+        },
+        {
+            "text": "Ferulic acid",
+            "code": "CPD:C01494",
+            "major": false
+        },
+        {
+            "text": "Chlorogenic acid",
+            "code": "CPD:C00852",
+            "major": false
+        },
+        {
+            "text": "Tetrahydroberberine",
+            "code": "CPD:C03329",
+            "major": false
+        },
+        {
+            "text": "Tetrahydropalmatine",
+            "code": "CPD:C02890",
+            "major": false
+        }
+    ],
+    "source": [
+        {
+            "text": "Coptis japonica",
+            "code": "TAX:3442"
+        },
+        {
+            "text": "Coptis chinensis",
+            "code": "TAX:261450"
+        },
+        {
+            "text": "Coptis deltoidea",
+            "code": "TAX:261449"
+        },
+        {
+            "text": "Coptis teeta",
+            "code": "TAX:261448"
+        }
+    ],
+    "remark": "Same as: D00092",
+    "comment": [
+        "Ranunculaceae (buttercup family) Coptis rhizome",
+        "Major component: Berberine [CPD:C00757]"
+    ],
+    "brite": [
+        {
+            "name": {
+                "text": "Therapeutic category of drugs in Japan",
+                "code": "BR:br08301"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Crude drugs and Chinese medicine formulations",
+                        "code": "5"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Crude drugs",
+                                "code": "51"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Crude drugs",
+                                        "code": "510"
+                                    },
+                                    "content": [
+                                        {
+                                            "name": {
+                                                "text": "Crude drugs",
+                                                "code": "5100"
+                                            },
+                                            "content": [
+                                                {
+                                                    "name": {
+                                                        "text": "Coptis rhizome ; Powdered coptis rhizome",
+                                                        "code": "D00092"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "text": "Classification of Japanese OTC drugs",
+                "code": "BR:br08313"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Agents for digestive organs"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Stomachics",
+                                "code": "11"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Coptis rhizome",
+                                        "code": "D00092"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "name": {
+                                "text": "Two or more combinations from antacids, stomachics, digestives, and intestinal regulators",
+                                "code": "14"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Coptis rhizome",
+                                        "code": "D00092"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "text": "Risk category of Japanese OTC drugs",
+                "code": "BR:br08312"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Second-class OTC drugs"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Crude drugs"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Coptis rhizome"
+                                    },
+                                    "content": [
+                                        {
+                                            "name": {
+                                                "text": "Coptis rhizome",
+                                                "code": "D00092"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": {
+                        "text": "Third-class OTC drugs"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Crude drugs"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Coptis rhizome"
+                                    },
+                                    "content": [
+                                        {
+                                            "name": {
+                                                "text": "Coptis rhizome",
+                                                "code": "D00092"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "text": "Pharmaceutical additives in Japan",
+                "code": "BR:br08316"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Flavoring substance"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Coptis rhizome",
+                                "code": "D00092"
+                            }
+                        },
+                        {
+                            "name": {
+                                "text": "Powdered coptis rhizome",
+                                "code": "D00092"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "text": "Drugs listed in the Japanese Pharmacopoeia",
+                "code": "BR:br08311"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Crude drugs"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Coptis rhizome",
+                                "code": "D00092"
+                            }
+                        },
+                        {
+                            "name": {
+                                "text": "Powdered coptis rhizome",
+                                "code": "D00092"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "text": "Traditional Chinese Medicine in Japan",
+                "code": "BR:br08304"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Crude drugs"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Drugs for clearing heat"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Drugs for clearing heat"
+                                    },
+                                    "content": [
+                                        {
+                                            "name": {
+                                                "text": "Coptis rhizome; Powdered coptis rhizome; Coptis rhizome",
+                                                "code": "D00092"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": {
+                                "text": "Stomachic and antidiarrheal drugs"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Stomachic and antidiarrheal drugs"
+                                    },
+                                    "content": [
+                                        {
+                                            "name": {
+                                                "text": "Coptis rhizome; Powdered coptis rhizome; Coptis rhizome",
+                                                "code": "D00092"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": {
+                                "text": "Drugs for external use"
+                            },
+                            "content": [
+                                {
+                                    "name": {
+                                        "text": "Drugs for external use"
+                                    },
+                                    "content": [
+                                        {
+                                            "name": {
+                                                "text": "Coptis rhizome; Powdered coptis rhizome; Coptis rhizome",
+                                                "code": "D00092"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": {
+                "text": "Crude drugs",
+                "code": "BR:br08305"
+            },
+            "content": [
+                {
+                    "name": {
+                        "text": "Dicot plants: others"
+                    },
+                    "content": [
+                        {
+                            "name": {
+                                "text": "Ranunculaceae",
+                                "code": "buttercup family"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -25,7 +25,7 @@
     "__tests__/**/*"
   ],
   "typeRoots": [
-    "src/custom_typings",
+    "./src/types",
     "node_modules/@types"
   ]
 }
