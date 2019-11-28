@@ -89,7 +89,6 @@ const keggObjectParser = (rawKeggObject: string) => {
         }
     }
 
-
     if (majorComponents) {
         keggObject.component.map((component) => {
             if (majorComponents.indexOf(component.code) > 0) {
@@ -98,7 +97,6 @@ const keggObjectParser = (rawKeggObject: string) => {
             return Object.assign(component, { major: false })
         })
     }
-
 
     return keggObject
 }

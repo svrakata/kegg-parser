@@ -14,6 +14,16 @@ export const parseLineContent = (rawLineContent: string) => {
 }
 
 const keggListParser = (rawList: string) => {
+    // validate the content of the rawList somehow
+    // maybe check if the first item of the list is contained in the string
+    const firstEntryID = "ev:E00001"
+
+    console.log(!rawList.includes(firstEntryID))
+
+    if (rawList === null || !rawList.includes(firstEntryID)) {
+        throw new Error("Invalid keggListParser input")
+    }
+
     const trimmedRawList = rawList.trim() // removes \n,\t and whitespaces from both ends of the raw list
     const splittedLines = trimmedRawList.split("\n")
 

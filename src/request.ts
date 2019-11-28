@@ -3,18 +3,27 @@ import * as http from "http"
 
 type TMethod = "GET" | "POST"
 
-export const request = (requestUrl: string, method: TMethod): Promise<string> => {
+interface IResponseObject {
+    status: number
+    document: string
+}
+
+export const request = (requestUrl: string): Promise<IResponseObject> => {
     // fix it
     // const { host, path } = url.parse(requestUrl)
     return new Promise((resolve, reject) => {
         const req = http.get(requestUrl, (res) => {
             let document = ""
+
             res.on("data", (chunk) => {
                 document += chunk.toString()
             })
 
             res.on("end", () => {
-                resolve(document)
+                resolve({
+                    document,
+                    status: res.statusCode,
+                })
             })
         })
 
@@ -24,6 +33,6 @@ export const request = (requestUrl: string, method: TMethod): Promise<string> =>
     })
 }
 
-export const getDocument = (requestUrl: string): Promise<string> => {
-    return request(requestUrl, "GET")
+export const getDocument = (requestUrl: string): Promise<IResponseObject> => {
+    return request(requestUrl)
 }
