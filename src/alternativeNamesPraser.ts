@@ -17,13 +17,14 @@ const alternativeNamesParser = async (componentID: string): Promise<string[]> =>
 
                     if (label === "NAME") {
                         while (true) {
-                            i++
                             label = lines[ i ].substring(0, offset).trim()
                             content = lines[ i ].substring(offset)
                             names.push(content.trim().replace(";", ""))
                             if (label !== "") {
                                 break
                             }
+                            i++
+
                         }
                         break
                     }
