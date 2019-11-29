@@ -1,50 +1,13 @@
-import proxy_list from "./request/proxy_list"
-import getConsecutiveItemFromList from "./utilities/getConsecutiveItemFromList"
+import fs from "fs"
 
-const nextProxy = getConsecutiveItemFromList(proxy_list)
+import alternativeNamesParser from "./alternativeNamesPraser"
+import keggObjectParser from "./keggObjectParser"
+import { get } from "./request/request"
 
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
+const load = async () => {
+    // const parsedObj = alternativeNamesParser(rawObj)
 
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
-console.log(nextProxy())
+    // fs.writeFileSync("./obj.json", JSON.stringify(parsedObj))
+}
+
+load()

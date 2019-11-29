@@ -12,7 +12,9 @@
     },
     "component": [
         {
-            "text": "Berberine",
+            "text": [
+                "Berberine"
+            ],
             "code": "CPD:C00757",
             "major": true
         },

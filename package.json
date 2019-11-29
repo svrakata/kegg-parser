@@ -27,6 +27,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.149",
     "@types/request": "^2.48.3",
     "lodash": "^4.17.15",
     "request": "^2.88.0",

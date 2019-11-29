@@ -1,18 +1,20 @@
+import alternativeNamesParser from "./alternativeNamesPraser"
 import { briteParser } from "./briteParser"
 import drugNameParser from "./drugNameParser"
 
-const keggObjectParser = (rawKeggObject: string) => {
+const keggObjectParser = async (rawKeggObject: string) => {
     const keggObject: any = {}
-    const parsedLines = []
-    let lastContent = []
-    let currentParsedLine: any = {}
-    const lines = rawKeggObject.trim().split("\n")
     let majorComponents = null
 
-    for (const line of lines) {
-        const label = line.substring(0, 12).trim()
-        const content = line.substring(12)
+    let currentParsedLine: any = {}
+    let lastContent = []
+    const parsedLines = []
+    const offset = 12
+    const lines = rawKeggObject.trim().split("\n")
 
+    for (const line of lines) {
+        const label = line.substring(0, offset).trim()
+        const content = line.substring(offset)
         if (label !== "") {
             lastContent = []
             currentParsedLine.label = label
@@ -89,14 +91,21 @@ const keggObjectParser = (rawKeggObject: string) => {
         }
     }
 
-    if (majorComponents) {
-        keggObject.component.map((component) => {
-            if (majorComponents.indexOf(component.code) > 0) {
-                return Object.assign(component, { major: true })
+    if (keggObject.component) {
+        const newComponents = []
+        for await (const component of keggObject.component) {
+            if (majorComponents && majorComponents.indexOf(component.code) > 0) {
+                const names = await alternativeNamesParser(component.code)
+                const newObj = Object.assign(component, { major: true, text: names })
+                newComponents.push(newObj)
+            } else {
+                newComponents.push(Object.assign(component, { major: false }))
             }
-            return Object.assign(component, { major: false })
-        })
+        }
+
+        keggObject.component = newComponents
     }
+
 
     return keggObject
 }
