@@ -14,8 +14,8 @@
         "component": [
             {
                 "text": [
-                    "Umbellatine",
-                    "C20H18NO4"
+                    "Berberine",
+                    "Umbellatine"
                 ],
                 "code": "CPD:C00757",
                 "major": true
@@ -408,7 +408,7 @@
         "component": [
             {
                 "text": [
-                    "C19H17N3O"
+                    "Evodiamine"
                 ],
                 "code": "CPD:C09187",
                 "major": true
@@ -424,11 +424,7 @@
                 "major": false
             },
             {
-                "text": "N",
-                "major": false
-            },
-            {
-                "text": "N-Dimethyl-5-methoxytryptamine",
+                "text": "N,N-Dimethyl-5-methoxytryptamine",
                 "code": "CPD:C08309",
                 "major": false
             },
@@ -699,7 +695,7 @@
         "component": [
             {
                 "text": [
-                    "C44H64O24"
+                    "Crocin"
                 ],
                 "code": "CPD:C08589",
                 "major": true
@@ -1016,7 +1012,7 @@
         "component": [
             {
                 "text": [
-                    "(C12H18O9)n"
+                    "Agarose"
                 ],
                 "code": "CPD:C01399",
                 "major": true
@@ -1639,8 +1635,8 @@
         "component": [
             {
                 "text": [
-                    "Gypsum",
-                    "CaSO4"
+                    "Calcium sulfate",
+                    "Gypsum"
                 ],
                 "code": "CPD:C13194",
                 "major": true
@@ -2206,7 +2202,10 @@
             }
         ],
         "dblinks": [
-            "CAS: 9000-01-5"
+            {
+                "dbName": "CAS",
+                "id": "9000-01-5"
+            }
         ]
     },
     {
@@ -2459,7 +2458,10 @@
             }
         ],
         "dblinks": [
-            "CAS: 8007-93-0"
+            {
+                "dbName": "CAS",
+                "id": "8007-93-0"
+            }
         ]
     },
     {
@@ -3033,7 +3035,10 @@
             }
         ],
         "dblinks": [
-            "CAS: 8007-93-0"
+            {
+                "dbName": "CAS",
+                "id": "8007-93-0"
+            }
         ]
     },
     {
@@ -3278,7 +3283,10 @@
             }
         ],
         "dblinks": [
-            "CAS: 8013-11-4"
+            {
+                "dbName": "CAS",
+                "id": "8013-11-4"
+            }
         ]
     },
     {
@@ -3530,7 +3538,10 @@
             }
         ],
         "dblinks": [
-            "CAS: 8015-89-2"
+            {
+                "dbName": "CAS",
+                "id": "8015-89-2"
+            }
         ]
     },
     {
@@ -3548,7 +3559,7 @@
         "component": [
             {
                 "text": [
-                    "C18H27NO3"
+                    "Capsaicin"
                 ],
                 "code": "CPD:C06866",
                 "major": true
@@ -3910,6 +3921,1163 @@
                                     "text": "Solanaceae",
                                     "code": "nightshade family"
                                 }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "entry": {
+            "code": "E00015",
+            "text": "Environ"
+        },
+        "name": {
+            "text": "Cardamon",
+            "code": "JP17"
+        },
+        "category": {
+            "text": "Crude drug"
+        },
+        "component": [
+            {
+                "text": [
+                    "alpha-Terpinyl acetate",
+                    "p-Menth-1-en-8-yl acetate"
+                ],
+                "code": "CPD:C12300",
+                "major": true
+            },
+            {
+                "text": "alpha-pinene",
+                "code": "CPD:C09880",
+                "major": false
+            },
+            {
+                "text": "1,8-Cineole",
+                "code": "CPD:C09844",
+                "major": false
+            },
+            {
+                "text": "Linalool",
+                "code": "CPD:C03985",
+                "major": false
+            },
+            {
+                "text": "Nerolidol",
+                "code": "CPD:C09704",
+                "major": false
+            },
+            {
+                "text": "Fatty oil",
+                "major": false
+            },
+            {
+                "text": "DL-alpha-Terpineol",
+                "code": "CPD:C16772",
+                "major": false
+            },
+            {
+                "text": "beta-Terpineol",
+                "code": "CPD:C17517",
+                "major": false
+            },
+            {
+                "text": "gamma-Terpineol",
+                "code": "CPD:C17518",
+                "major": false
+            },
+            {
+                "text": "d-Limonene",
+                "code": "CPD:C06078",
+                "major": false
+            },
+            {
+                "text": "Mn",
+                "major": false
+            }
+        ],
+        "source": [
+            {
+                "text": "Elettaria cardamomum",
+                "code": "TAX:105181"
+            }
+        ],
+        "remark": "Same as: D03404",
+        "comment": [
+            "Zingiberaceae (ginger family) Cardamom seed and fruit",
+            "Major component: Terpinyl acetate [CPD:C12300]"
+        ],
+        "brite": [
+            {
+                "name": {
+                    "text": "Therapeutic category of drugs in Japan",
+                    "code": "BR:br08301"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs and Chinese medicine formulations",
+                            "code": "5"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Crude drugs",
+                                    "code": "51"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Crude drugs",
+                                            "code": "510"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Crude drugs",
+                                                    "code": "5100"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "Cardamon ; Cardamom seed",
+                                                            "code": "D03404"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Risk category of Japanese OTC drugs",
+                    "code": "BR:br08312"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Third-class OTC drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Crude drugs"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Cardamon"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Cardamon",
+                                                    "code": "D03404"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Drugs listed in the Japanese Pharmacopoeia",
+                    "code": "BR:br08311"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Cardamon",
+                                    "code": "D03404"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Traditional Chinese Medicine in Japan",
+                    "code": "BR:br08304"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Drugs for dampness"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Drugs for resolving dampness"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Cardamon; Cardamom seed; Cardamon",
+                                                    "code": "D03404"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Crude drugs",
+                    "code": "BR:br08305"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Monocot plants"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Zingiberaceae",
+                                    "code": "ginger family"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "entry": {
+            "code": "E00016",
+            "text": "Environ"
+        },
+        "name": {
+            "text": "Melilot extract",
+            "code": "JAN"
+        },
+        "category": {
+            "text": "Crude drug"
+        },
+        "component": [
+            {
+                "text": "Coumarin",
+                "code": "DR:D07751",
+                "major": false
+            }
+        ],
+        "source": [
+            {
+                "text": "Melilotus officinalis",
+                "code": "TAX:47083"
+            }
+        ],
+        "remark": "Same as: D04668",
+        "brite": [
+            {
+                "name": {
+                    "text": "Therapeutic category of drugs in Japan",
+                    "code": "BR:br08301"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Agents affecting individual organs",
+                            "code": "2"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Urogenital and anal organ agents",
+                                    "code": "25"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Hemorrhoidal preparations",
+                                            "code": "255"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Others",
+                                                    "code": "2559"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "Melilot extract",
+                                                            "code": "D04668"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Risk category of Japanese OTC drugs",
+                    "code": "BR:br08312"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Second-class OTC drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Crude drugs"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Melilot"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Melilot extract",
+                                                    "code": "D04668"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": {
+                            "text": "Third-class OTC drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Crude drugs"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Melilot"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Melilot extract",
+                                                    "code": "D04668"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Drugs listed in the Japanese Pharmacopoeia",
+                    "code": "BR:br08311"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs",
+                            "code": "non-JP"
+                        }
+                    }
+                ]
+            }
+        ],
+        "dblinks": [
+            {
+                "dbName": "CAS",
+                "id": "8023-73-2"
+            }
+        ]
+    },
+    {
+        "entry": {
+            "code": "E00017",
+            "text": "Environ"
+        },
+        "name": {
+            "text": "Opium",
+            "code": "USP"
+        },
+        "category": {
+            "text": "Crude drug"
+        },
+        "component": [
+            {
+                "text": [
+                    "Morphine"
+                ],
+                "code": "CPD:C01516",
+                "major": true
+            },
+            {
+                "text": "Codeine",
+                "code": "CPD:C06174",
+                "major": false
+            },
+            {
+                "text": "Papaverine",
+                "code": "CPD:C06533",
+                "major": false
+            },
+            {
+                "text": "Noscapine",
+                "code": "CPD:C09592",
+                "major": false
+            }
+        ],
+        "source": [
+            {
+                "text": "Papaver somniferum",
+                "code": "TAX:3469"
+            }
+        ],
+        "remark": "Same as: D03444",
+        "comment": [
+            "Papaveraceae (poppy family) opium extract",
+            "Major component: Morphine [CPD:C01516]"
+        ],
+        "brite": [
+            {
+                "name": {
+                    "text": "Anatomical Therapeutic Chemical  classification",
+                    "code": "ATCBR:br08303"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "A ALIMENTARY TRACT AND METABOLISM"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "A07 ANTIDIARRHEALS, INTESTINAL ANTIINFLAMMATORY/ANTIINFECTIVE AGENTS"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "A07D ANTIPROPULSIVES"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "A07DA Antipropulsives"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "A07DA02 Opium"
+                                                        },
+                                                        "content": [
+                                                            {
+                                                                "name": {
+                                                                    "text": "Opium  &lt;JP&gt;",
+                                                                    "code": "D03444"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": {
+                            "text": "N NERVOUS SYSTEM"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "N02 ANALGESICS"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "N02A OPIOIDS"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "N02AA Natural opium alkaloids"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "N02AA02 Opium"
+                                                        },
+                                                        "content": [
+                                                            {
+                                                                "name": {
+                                                                    "text": "Opium  &lt;JP&gt;",
+                                                                    "code": "D03444"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Therapeutic category of drugs in Japan",
+                    "code": "BR:br08301"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Narcotics",
+                            "code": "8"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Alkaloidal narcotics",
+                                    "code": "81"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Opium alkaloids",
+                                            "code": "811"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Opiates",
+                                                    "code": "8112"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "Opium ; Opium, powdered ; Diluted opium powder",
+                                                            "code": "D03444"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Drugs listed in the Japanese Pharmacopoeia",
+                    "code": "BR:br08311"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Powdered opium",
+                                    "code": "D03444"
+                                }
+                            },
+                            {
+                                "name": {
+                                    "text": "Diluted opium powder",
+                                    "code": "D03444"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Crude drugs",
+                    "code": "BR:br08305"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Dicot plants: others"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Papaveraceae",
+                                    "code": "poppy family"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "dblinks": [
+            {
+                "dbName": "CAS",
+                "id": "8008-60-4"
+            }
+        ]
+    },
+    {
+        "entry": {
+            "code": "E00018",
+            "text": "Environ"
+        },
+        "name": {
+            "text": "Clove",
+            "code": "JP17"
+        },
+        "category": {
+            "text": "Crude drug; Medicinal herb"
+        },
+        "component": [
+            {
+                "text": "Eugenol",
+                "code": "CPD:C10453",
+                "major": false
+            },
+            {
+                "text": "Acetyleugenol",
+                "code": "CPD:C14567",
+                "major": false
+            },
+            {
+                "text": "Chavicol",
+                "code": "CPD:C16930",
+                "major": false
+            },
+            {
+                "text": "alpha-Caryophyllene",
+                "major": false
+            },
+            {
+                "text": "beta-Caryophyllene",
+                "code": "CPD:C09629",
+                "major": false
+            },
+            {
+                "text": "Humulene",
+                "code": "CPD:C09684",
+                "major": false
+            },
+            {
+                "text": "Stigmasterol",
+                "code": "CPD:C05442",
+                "major": false
+            },
+            {
+                "text": "Sitosterol",
+                "code": "CPD:C01753",
+                "major": false
+            },
+            {
+                "text": "Campesterol glucoside",
+                "major": false
+            },
+            {
+                "text": "Eugenoside I",
+                "major": false
+            },
+            {
+                "text": "II",
+                "major": false
+            },
+            {
+                "text": [
+                    "Eugeniin",
+                    "Tellimagrandin II"
+                ],
+                "code": "CPD:C10224",
+                "major": true
+            },
+            {
+                "text": "1-Desgalloyleugeniin",
+                "code": "CPD:C10241",
+                "major": false
+            },
+            {
+                "text": "2-Desgalloyleugeniin",
+                "major": false
+            },
+            {
+                "text": "Higenamine",
+                "code": "CPD:C06346",
+                "major": false
+            },
+            {
+                "text": "Rhamnetin",
+                "code": "CPD:C10176",
+                "major": false
+            },
+            {
+                "text": "Kaempferol",
+                "code": "CPD:C05903",
+                "major": false
+            },
+            {
+                "text": "Oleanolic acid",
+                "code": "CPD:C17148",
+                "major": false
+            },
+            {
+                "text": "Tannin",
+                "major": false
+            },
+            {
+                "text": "wax",
+                "major": false
+            },
+            {
+                "text": "Furfural",
+                "code": "CPD:C14279",
+                "major": false
+            },
+            {
+                "text": "Vanillin",
+                "code": "CPD:C00755",
+                "major": false
+            },
+            {
+                "text": "Isoeugenitin",
+                "major": false
+            },
+            {
+                "text": "Isoeugenitol",
+                "major": false
+            },
+            {
+                "text": "Carophylla-4,8-dien-5beta-ol",
+                "code": "1213",
+                "major": false
+            },
+            {
+                "text": "Carophylla-3,8-dien-5alpha-ol",
+                "code": "13",
+                "major": false
+            },
+            {
+                "text": "Methyl 2alpha-hydroxyoleanoate",
+                "major": false
+            }
+        ],
+        "source": [
+            {
+                "text": "Syzygium aromaticum",
+                "code": "TAX:219868"
+            }
+        ],
+        "remark": "Same as: D03570",
+        "comment": [
+            "Myrtaceae (myrtle family) Clove flower bud",
+            "Major component: Eugeniin [CPD:C10224]"
+        ],
+        "brite": [
+            {
+                "name": {
+                    "text": "Therapeutic category of drugs in Japan",
+                    "code": "BR:br08301"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs and Chinese medicine formulations",
+                            "code": "5"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Crude drugs",
+                                    "code": "51"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Crude drugs",
+                                            "code": "510"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Crude drugs",
+                                                    "code": "5100"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "Clove ; Powdered clove",
+                                                            "code": "D03570"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Classification of Japanese OTC drugs",
+                    "code": "BR:br08313"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Agents for digestive organs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Stomachics",
+                                    "code": "11"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Clove",
+                                            "code": "D03570"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": {
+                                    "text": "Antidiarrheals",
+                                    "code": "16"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Clove",
+                                            "code": "D03570"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Risk category of Japanese OTC drugs",
+                    "code": "BR:br08312"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Third-class OTC drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Crude drugs"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Clove"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Clove",
+                                                    "code": "D03570"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Drugs listed in the Japanese Pharmacopoeia",
+                    "code": "BR:br08311"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Clove",
+                                    "code": "D03570"
+                                }
+                            },
+                            {
+                                "name": {
+                                    "text": "Powdered clove",
+                                    "code": "D03570"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Traditional Chinese Medicine in Japan",
+                    "code": "BR:br08304"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Drugs for warming the interior"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Drugs for warming the interior"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Clove; Powdered clove; Clove",
+                                                    "code": "D03570"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Crude drugs",
+                    "code": "BR:br08305"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Dicot plants: rosids"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Myrtaceae",
+                                    "code": "myrtle family"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Clove",
+                                            "code": "D03570"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Medicinal herbs",
+                    "code": "BR:br08322"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Dicot plants: rosids"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Myrtaceae",
+                                    "code": "myrtle family"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "dblinks": [
+            {
+                "dbName": "CAS",
+                "id": "8000-34-8"
+            }
+        ]
+    },
+    {
+        "entry": {
+            "code": "E00020",
+            "text": "Environ"
+        },
+        "name": {
+            "text": "Quercus salicina extract",
+            "code": "JAN"
+        },
+        "category": {
+            "text": "Crude drug"
+        },
+        "source": [
+            {
+                "text": "Quercus salicina",
+                "code": "TAX:103488"
+            }
+        ],
+        "remark": "Same as: D04712",
+        "brite": [
+            {
+                "name": {
+                    "text": "Therapeutic category of drugs in Japan",
+                    "code": "BR:br08301"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Agents affecting individual organs",
+                            "code": "2"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Urogenital and anal organ agents",
+                                    "code": "25"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Miscellaneous",
+                                            "code": "259"
+                                        },
+                                        "content": [
+                                            {
+                                                "name": {
+                                                    "text": "Miscellaneous",
+                                                    "code": "2590"
+                                                },
+                                                "content": [
+                                                    {
+                                                        "name": {
+                                                            "text": "Quercus salicina extract",
+                                                            "code": "D04712"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Drugs listed in the Japanese Pharmacopoeia",
+                    "code": "BR:br08311"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Crude drugs",
+                            "code": "non-JP"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Quercus salicina extract",
+                                    "code": "D04712"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "text": "Animal drugs in Japan",
+                    "code": "BR:br08331"
+                },
+                "content": [
+                    {
+                        "name": {
+                            "text": "Agents affecting circulatory organs, respiratory organs and urinary organs",
+                            "code": "92"
+                        },
+                        "content": [
+                            {
+                                "name": {
+                                    "text": "Diuretics",
+                                    "code": "922"
+                                },
+                                "content": [
+                                    {
+                                        "name": {
+                                            "text": "Other diuretics",
+                                            "code": "9229"
+                                        }
+                                    }
+                                ]
                             }
                         ]
                     }

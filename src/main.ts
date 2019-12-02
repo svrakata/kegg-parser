@@ -34,6 +34,7 @@ const load = async () => {
         writeStream.write("]")
         writeStream.close()
     } catch (err) {
+        writeStream.close()
         console.error(err)
     }
 }

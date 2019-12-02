@@ -1,5 +1,6 @@
 import alternativeNamesParser from "./alternativeNamesPraser"
 import { briteParser } from "./briteParser"
+import dblinksParser from "./dblinksParser"
 import drugNameParser from "./drugNameParser"
 
 const keggObjectParser = async (rawKeggObject: string) => {
@@ -50,7 +51,7 @@ const keggObjectParser = async (rawKeggObject: string) => {
             }
 
             case "component": {
-                const components = content[ 0 ].split(",")
+                const components = content[ 0 ].split(", ")
                 keggObject[ label ] = components.map((component) => drugNameParser(component))
                 continue
             }
@@ -79,13 +80,18 @@ const keggObjectParser = async (rawKeggObject: string) => {
                 continue
             }
 
+            case "dblinks": {
+                keggObject[ label ] = dblinksParser(content)
+                continue
+            }
+
             case "///":
                 continue
 
             default: {
                 keggObject[ label ] = content
                 // tslint:disable-next-line: max-line-length
-                console.error(`The content of property ${label} has not been parsed and is added raw to the KEGG object`)
+                console.error(`The content of property "${label}" has not been parsed and is added raw to the KEGG object`)
                 continue
             }
         }

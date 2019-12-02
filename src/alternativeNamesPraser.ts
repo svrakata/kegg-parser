@@ -18,25 +18,25 @@ const alternativeNamesParser = async (componentID: string): Promise<string[]> =>
                     if (label === "NAME") {
                         while (true) {
                             label = lines[ i ].substring(0, offset).trim()
-                            content = lines[ i ].substring(offset)
-                            names.push(content.trim().replace(";", ""))
-                            if (label !== "") {
+                            if (label !== "" && label !== "NAME") {
                                 break
                             }
-                            i++
 
+                            content = lines[ i ].substring(offset)
+                            names.push(content.trim().replace(";", ""))
+
+                            i++
                         }
                         break
                     }
                 }
-
                 alternativeNames.push(...names)
             } catch (err) {
                 console.error(err)
             }
         }
     }
-
+    // console.log(alternativeNames)
     return alternativeNames
 }
 
