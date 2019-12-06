@@ -28,7 +28,7 @@ const drugNameParser = (rawDrugName: string) => {
         result.code = code
     }
 
-    result.text = text.trim()
+    result.text = text.trim().split(",")
 
     return result
 }
