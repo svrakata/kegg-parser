@@ -4,7 +4,7 @@
 // custom test functionality copied from here:
 // link -> https://medium.com/@andrei.pfeiffer/jest-matching-objects-in-array-50fe2f4d6b98
 
-import { parseDrugName, parseLineContent, parseList, splitLine } from "../src/keggListParser"
+import { parseDrugName, parseLineContent, parseList, splitLine } from "../src/environ/environ_list_parser"
 import keggListTestCases from "./kegg_list_test_cases.json"
 
 describe("Testing kegg database list parser.", () => {

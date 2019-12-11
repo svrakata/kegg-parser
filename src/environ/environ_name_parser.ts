@@ -1,4 +1,11 @@
-const drugNameParser = (rawDrugName: string) => {
+export interface IEnvironName {
+    code: string
+    text: string[]
+}
+
+type TEnvironNameParser = (environName: string) => IEnvironName
+
+const environNameParser: TEnvironNameParser = (environName) => {
     let isCode = false
     let code = ""
     let text = ""
@@ -6,7 +13,7 @@ const drugNameParser = (rawDrugName: string) => {
         text: "",
     }
 
-    for (const char of rawDrugName) {
+    for (const char of environName) {
         if (char === "(" || char === "[") {
             isCode = true
             continue
@@ -28,9 +35,10 @@ const drugNameParser = (rawDrugName: string) => {
         result.code = code
     }
 
-    result.text = text.trim().split(",")
+    // removes commas from some odd definitions in names that break the csv construction
+    result.text = text.trim().replace(",", "")
 
     return result
 }
 
-export default drugNameParser
+export default environNameParser

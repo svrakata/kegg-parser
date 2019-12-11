@@ -1,7 +1,7 @@
 import alternativeNamesParser from "./alternativeNamesPraser"
 import { briteParser } from "./briteParser"
 import dblinksParser from "./dblinksParser"
-import drugNameParser from "./drugNameParser"
+import drugNameParser from "./environ/environ_name_parser"
 
 const keggObjectParser = async (rawKeggObject: string) => {
     const keggObject: any = {}

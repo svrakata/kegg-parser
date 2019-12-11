@@ -1,5 +1,5 @@
 import request, { CoreOptions, UrlOptions } from "request"
-import getConsecutiveItemFromList from "../utilities/getConsecutiveItemFromList"
+import getConsecutiveItemFromList from "../utilities/get_consecutive_item_from_list"
 import proxyList from "./proxy_list"
 import userAgentList from "./user_agents"
 
@@ -7,7 +7,7 @@ const timeout = 30000
 const nextProxy = getConsecutiveItemFromList(proxyList)
 const nextUserAgent = getConsecutiveItemFromList(userAgentList)
 
-export const get = (options: CoreOptions & UrlOptions): Promise<string> => {
+const get = (options: CoreOptions & UrlOptions): Promise<string> => {
     options.method = "GET"
     options.headers = { "User-Agent": nextUserAgent() }
 
@@ -33,3 +33,4 @@ export const get = (options: CoreOptions & UrlOptions): Promise<string> => {
     })
 }
 
+export default get

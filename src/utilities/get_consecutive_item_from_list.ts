@@ -11,12 +11,4 @@ const getConsecutiveItemFromList = <T>(list: T[]) => {
     }
 }
 
-
-// cannot restart generator, once it is exausted you have to call the function again
-// const getConsecutiveItemFromList = function* <T>(list: T[]): Generator<T, void, T> {
-//     for (const item of list) {
-//         yield item
-//     }
-// }
-
 export default getConsecutiveItemFromList

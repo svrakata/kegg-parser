@@ -1,4 +1,4 @@
-import drugNameParser from "./drugNameParser"
+import drugNameParser from "./environ/environ_name_parser"
 
 const parseBriteLine = (line: string) => {
     let code = null
