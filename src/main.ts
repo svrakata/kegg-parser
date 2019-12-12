@@ -42,13 +42,20 @@ import path from "path"
 // load()
 
 
+import getCancerogens from "./brite/cancerogens/get_cancerogens"
+import getPesticides from "./brite/pesticides/get_pesticides"
+import getNaturalToxins from "./brite/toxins/get_natural_toxins"
 import getEnvironList from "./environ/get_environ_list"
 
 const load = async () => {
-    const environList = await getEnvironList({ outputType: "csv" })
-    fs.writeFileSync(path.resolve(__dirname, "temp_results", "environ_list.csv"), environList)
-
-
+    // const environList = await getEnvironList()
+    const naturalToxinsList = await getNaturalToxins({ outputType: "csv" })
+    // const cancerogensList = await getCancerogens({ outputType: "csv" })
+    const pesticidesList = await getPesticides({ outputType: "csv" })
+    // console.log(pesticidesList)
+    fs.writeFileSync(path.resolve(__dirname, "temp_results", "natural_toxins.csv"), naturalToxinsList)
+    // fs.writeFileSync(path.resolve(__dirname, "temp_results", "cancerogens.csv"), cancerogensList)
+    fs.writeFileSync(path.resolve(__dirname, "temp_results", "pesticides.csv"), pesticidesList)
 }
 
 load()

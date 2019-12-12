@@ -1,4 +1,4 @@
-import get from "./request/get"
+import get from "../request/get"
 
 const alternativeNamesParser = async (componentID: string): Promise<string[]> => {
     const alternativeNames = []

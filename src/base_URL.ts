@@ -1,2 +1,2 @@
-const baseURL = "http://rest.kegg.jp/list/"
+const baseURL = "http://rest.kegg.jp/"
 export default baseURL

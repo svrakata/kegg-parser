@@ -1,0 +1,437 @@
+"name","code"
+"10-Deacetylbaccatin III","C11700"
+"11-Deoxytetrodotoxin","C20026"
+"19-Bromoaplysiatoxin","C16770"
+"Abrin","C20068"
+"Acanthifolicin","C20006"
+"Aconine","C19990"
+"Aconitine","C06091"
+"Acromelic acid A","C19949"
+"Adolapin","C20047"
+"Aflatoxin B1","C06800"
+"Aflatoxin B2","C16753"
+"Aflatoxin G1","C16755"
+"Aflatoxin G2","C16754"
+"Aflatoxin M1","C16756"
+"Aflatoxins",
+"Aflatrem","C20555"
+"Agatoxins",
+"Agelenin","C20115"
+"Agitoxin 1","C20056"
+"Agroclavine","C09023"
+"Alkaloids",
+"Alkaloids",
+"Alkaloids",
+"Alkaloids",
+"Allopumiliotoxin 267A","C20034"
+"alpha-Amanitin","C08438"
+"alpha-Antiarin","C08847"
+"alpha-Bungarotoxin","C20037"
+"alpha-Chaconine","C10796"
+"alpha-Ergocryptine","C07545"
+"alpha-Latrotoxin","C20054"
+"alpha-Pompilidotoxin","C20078"
+"alpha-Zearalanol","C14752"
+"alpha-Zearalenol","C14750"
+"Alternariol","C16838"
+"Amnesic Shellfish Poisoning,ASP",
+"Amygdalin","C08325"
+"Anatoxin a","C10841"
+"Anatoxin a(s)","C19998"
+"Anatoxins",
+"Anisatin","C09294"
+"Apamine","C20048"
+"Aplysiatoxin","C16769"
+"Aplysiatoxins",
+"Arenobufagin","C20035"
+"Argiopinin I","C20093"
+"Argiopinin II","C20094"
+"Argiopinin III","C20095"
+"Argiopinins",
+"Argiotoxin 659","C13929"
+"Aristolochic acid","C08469"
+"Asebotoxin II","C09063"
+"Atropine","C01479"
+"Azaspiracid","C16907"
+"Batrachotoxin","C13750"
+"Batrachotoxinin A","C20032"
+"Beauvericin","C11590"
+"Bee venoms",
+"Bestoxin","C20063"
+"beta-Bungarotoxin","C20038"
+"beta-Ergocryptine","C20590"
+"beta-Pompilidotoxin","C20079"
+"beta-Zearalenol","C14751"
+"Bicuculline","C09364"
+"Bombolitin I","C20080"
+"Botrocetin","C20085"
+"Brevetoxin A","C16839"
+"Brevetoxin B","C16857"
+"Brevetoxin B1","C20013"
+"Brevetoxin B2","C20014"
+"Brevetoxin C","C20015"
+"Brucine","C09084"
+"Bufalin","C16922"
+"Bufotalin","C16923"
+"Bufotenine","C08299"
+"Bufotoxins",
+"C-Curarine","C09144"
+"C-Toxiferine I","C09246"
+"Calciseptine","C20041"
+"Calycanthine","C10573"
+"Carbamate derivatives",
+"Cardiac glycosides",
+"Cardiotoxin III","C20042"
+"Caribbean ciguatoxin 1","C20003"
+"Caribenolide I","C20007"
+"Cephalostatin 1","C20060"
+"Cerberin","C19984"
+"Charybdotoxin","C20069"
+"Chelerythrine","C12227"
+"Chelidonine","C12242"
+"Cicutoxin","C08402"
+"Ciguatera fish poisoning,CFP",
+"Ciguatoxin 4A","C20002"
+"Ciguatoxin I","C16762"
+"Cinobufotalin","C16932"
+"Citreoviridin","C16766"
+"Citrinin","C16765"
+"Clitidine","C19977"
+"Colchicine","C07592"
+"Conhydrine","C19983"
+"Coniine","C06523"
+"Contulakin G","C20084"
+"Convallatoxin","C08858"
+"Convalloside","C19986"
+"Coprine","C08271"
+"Coriamyrtin","C09379"
+"Crotalase","C20086"
+"Crotalocytin","C20087"
+"CTX 3C","C20001"
+"Cupiennin 1a","C20098"
+"Cupiennin 1b","C20099"
+"Cupiennins",
+"Cyanogenic glycosides",
+"Cyanotoxins",
+"Cycasin","C01418"
+"Cyclic peptides",
+"Cyclic polyethers",
+"Cyclic polyethers",
+"Cyclic polyethers",
+"Cyclochlorotine","C19379"
+"Cyclopamine","C10798"
+"Cyclopiazonic acid","C03032"
+"Cylindrospermopsin","C19999"
+"Cytochalasin A","C19953"
+"Cytochalasin B","C19954"
+"Debromoaplysiatoxin","C05148"
+"Decarbamoyl derivatives",
+"Decarbamoylgonyautoxin 1","C20022"
+"Decarbamoylsaxitoxin","C20021"
+"Delphinine","C08677"
+"Dendrotoxin","C20039"
+"Dermorphin","C20030"
+"Diacetoxyscirpenol","C09662"
+"Diarrhetic shellfish poisoning,DSP",
+"Dicentrine","C17426"
+"Dictamnine","C10660"
+"Digitoxin","C06955"
+"Digoxin","C06956"
+"Dinophysistoxin 1","C16870"
+"Dinophysistoxin 4","C20005"
+"Diterpenoids",
+"Domesticine","C19980"
+"Domoic acid","C13732"
+"Echimidine","C10299"
+"Echistatin","C20088"
+"Eledoisin","C20029"
+"Ellipticine","C09154"
+"Emindole SB","C20527"
+"Enanthotoxin","C20044"
+"Enniatin B","C15740"
+"Enniatin D","C15757"
+"Epibatidine","C11690"
+"Ergocornine","C09162"
+"Ergocristine","C09164"
+"Ergonovine","C07543"
+"Ergot alkaloids",
+"Ergotamine","C07544"
+"Euphornin","C19991"
+"Fasciculin","C20040"
+"Fasciculol E","C19957"
+"Fasciculol F","C19958"
+"Frog venoms",
+"Fumonisin B1","C19241"
+"Fumonisin B2","C19242"
+"Fumonisins",
+"Fungal toxins",
+"Fusaproliferin","C20591"
+"Fusarenone X","C19583"
+"Gabonase","C20089"
+"Galanthamine","C08526"
+"Gambieric acid A","C16885"
+"Gambieric acid B","C16886"
+"Gambieric acid C","C16887"
+"Gambieric acid D","C16888"
+"Gambierol","C20004"
+"Gambiertoxin 4b","C16852"
+"gamma-Coniceine","C10138"
+"Gelsedine","C19982"
+"Gelsemicine","C09203"
+"Gelsemine","C09207"
+"Gliotoxin","C10595"
+"Gloriosine","C19981"
+"Glycosides",
+"Goniodomin A","C16899"
+"Gonyautoxin 1","C16855"
+"Gonyautoxin 2","C16856"
+"Gonyautoxin 5","C20018"
+"Gonyautoxin 6","C20019"
+"Gonyautoxin 8","C20020"
+"Grayanotoxin I","C09103"
+"Gymnodimine","C20025"
+"Gyromitrin","C08305"
+"Hanatoxin 1","C20116"
+"Hemibrevetoxin B","C20016"
+"Hemorrhagins",
+"Histrionicotoxin","C13683"
+"Hoffmanniolide","C20008"
+"Homoyessotoxin","C20011"
+"HT-2 Toxin","C19952"
+"Huwentoxin-XI","C20117"
+"Hypoglycin","C08287"
+"Hypoglycin B","C08280"
+"Iberiotoxin","C20055"
+"Ibotenic acid","C10600"
+"Illudin M","C09687"
+"Illudin S","C09688"
+"Indole alkaloids",
+"Indole diterpene alkaloids",
+"Iriomoteolide 1a","C20009"
+"Isocorydine","C09549"
+"Isodomoic acid A","C20027"
+"Isoquinoline alkaloids",
+"Janthitrem B","C20600"
+"Janthitrem C","C20601"
+"Jervine","C10811"
+"Jingzhaotoxin I","C20100"
+"Jingzhaotoxin III","C20101"
+"Jingzhaotoxin V","C20102"
+"Jingzhaotoxins",
+"Kainoids",
+"kappa-Hefutoxin 1","C20064"
+"L-Hyoscyamine","C02046"
+"Lasiocarpine","C10341"
+"Latarcin 1","C20103"
+"Latarcin 2a","C20104"
+"Latarcin 3a","C20105"
+"Latarcins",
+"Leiurotoxin I","C20058"
+"Lolitrem B","C20551"
+"Luteoskyrin","C16763"
+"Lycocitin 1","C20106"
+"Lycocitin 2","C20107"
+"Lycocitin 3","C20108"
+"Lycocitins",
+"Lycorine","C08532"
+"Lycotoxin I","C20109"
+"Lycotoxin II","C20110"
+"Lycotoxins",
+"Lyngbyatoxin","C15720"
+"Macrolides",
+"Maitotoxin","C16854"
+"Mandaratoxin","C20051"
+"Margatoxin","C20057"
+"Marine biotoxins",
+"Marinobufagenin","C20036"
+"Mast cell degranulating peptide","C20049"
+"Mastoparan","C15947"
+"Matrine","C10774"
+"Maurotoxin","C20065"
+"Megascoliakinin","C20077"
+"Melitten","C11198"
+"Mesaconitine","C08698"
+"Methylconiine","C10159"
+"Microcystin LR","C05371"
+"Microcystin RA","C19996"
+"Microcystin RR","C19995"
+"Microcystin YR","C19997"
+"Microcystins",
+"Mollicellin C","C20046"
+"Mollusk venoms",
+"Moniliformin","C20592"
+"Muscarine","C07473"
+"Muscimol","C08311"
+"Mushroom toxins",
+"Mycotoxins",
+"N-Sulfo-carbamoyl derivatives",
+"Nantenine","C19985"
+"Neoilludin A","C19956"
+"Neosaxitoxin","C17208"
+"Neosurugatoxin","C16761"
+"Neurotoxic Shellfish Poison,NSP",
+"Neurotoxins",
+"Neurotoxins",
+"Nicotine","C00745"
+"Nivalenol","C06080"
+"Nodularin","C15713"
+"Ochratoxin A","C09955"
+"Okadaic acid","C01945"
+"Okadaic acid and derivatives",
+"Oleandrin","C19987"
+"omega-Conotoxin","C19906"
+"Onchidal","C20000"
+"Orellanine","C19959"
+"Ostreocin D","C20028"
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Others",
+"Ouabain","C01443"
+"Oxyopinin 1","C20111"
+"Oxyopinin 2a","C20112"
+"Oxyopinins",
+"Paclitaxel","C07394"
+"Palytoxin","C16851"
+"Palytoxins",
+"Paralytic shellfish poisoning,PSP",
+"Paspalicine","C20553"
+"Paspaline","C20530"
+"Paspalinine","C20554"
+"Patulin","C16748"
+"Paxilline","C13782"
+"Pectenotoxin 1","C16871"
+"Pectenotoxin 2","C20012"
+"Penicillic acid","C16804"
+"Penitrem A","C20070"
+"Penitrem B","C20731"
+"Penitrem C","C20795"
+"Penitrem D","C20596"
+"Penitrem E","C20597"
+"Penitrem F","C20598"
+"Pennigritrem","C20599"
+"Peptides",
+"Peptides",
+"Peptides",
+"Peptides",
+"Phalloidin","C08439"
+"Philanthotoxin","C20052"
+"Philanthotoxin 343","C13806"
+"Phomopsin A","C19955"
+"Phorbol","C09155"
+"Phrixotoxin 1","C20113"
+"Phrixotoxin 2","C20114"
+"Phrixotoxins",
+"Phrymarolin I","C10737"
+"Phytotoxins",
+"Picrotoxinin","C09529"
+"Piperidine alkaloids",
+"Podophyllotoxin","C10874"
+"Polisteskinin JT","C20050"
+"Polyynes",
+"PR-toxin","C06079"
+"Prorocentrolide","C20023"
+"Prorocentrolide B","C20024"
+"Proteins",
+"Protoanemonin","C07090"
+"Protopine","C05189"
+"Protoveratrine A","C10815"
+"Protoveratrine B","C10816"
+"Prunasin","C00844"
+"Pseudoargiopinin I","C20096"
+"Pseudoargiopinin III","C20097"
+"Pseudoconhydrine","C10168"
+"Psilocin","C08312"
+"Psilocybin","C07576"
+"Ptaquiloside","C19515"
+"Pumiliotoxin 251D","C20031"
+"Pumiliotoxin A","C20033"
+"Pyropheophorbide a","C18064"
+"Pyrrolizidine alkaloids",
+"Ranunculin","C08512"
+"Retronecine","C06177"
+"Rhodexin A","C08877"
+"Rhodocytin","C21791"
+"Rhodojaponin I","C19992"
+"Ricin","C01362"
+"Ritterazine A","C20061"
+"Robustoxin","C20118"
+"Rubratoxin B","C16767"
+"Rugulosin","C16764"
+"Ryanodine","C08705"
+"Salamandra venoms",
+"Samandarine","C19950"
+"Samandarone","C19951"
+"Samandenone","C20059"
+"Sanguinarine","C06162"
+"Satratoxin H","C20017"
+"Saxitoxin","C13757"
+"Saxitoxin","C13757"
+"Sclerocitrin","C19978"
+"Scopolamine","C01851"
+"Scorpion venoms",
+"Sempervirine","C09240"
+"Senecionine","C06176"
+"Senkirkine","C10396"
+"Sesquiterpenoids",
+"Slotoxin","C20066"
+"Snake venoms",
+"Solanine","C10820"
+"Spider venoms",
+"Sporidesmin J","C16768"
+"Sterigmatocystin","C00961"
+"Steroid alkaloids",
+"Stizolobate","C06047"
+"Stizolobinate","C06048"
+"Stromatoxin 1","C20067"
+"Strophanthidin","C19988"
+"Strychnine","C06522"
+"T-2 Toxin","C09738"
+"Taicatoxin","C20043"
+"Taxine A","C10619"
+"Taxine B","C19989"
+"Tazettine","C12179"
+"Tentoxin","C08441"
+"Tenuazonic acid","C08511"
+"Terpendole C","C20546"
+"Terpenoids",
+"Terpenoids",
+"Tertiapin","C20053"
+"Tetrodotoxin","C11692"
+"Tetrodotoxins",
+"Toxin omega-Aga-IA","C20090"
+"Toxin omega-Aga-IIIA","C20091"
+"Toxin omega-Aga-IVA","C20092"
+"Trichothecenes",
+"Tropan alkaloids",
+"Tubocurarine","C07547"
+"Tutin","C09570"
+"Urushiol III","C10839"
+"Ustalic acid","C19979"
+"Valinopine","C19976"
+"Venoms",
+"Veratramine","C10829"
+"Veratridine","C06544"
+"Verruculogen","C20045"
+"Vespakinin M","C20081"
+"Vinblastine","C07201"
+"Vincristine","C07204"
+"Vindoline","C01626"
+"Virol A","C19993"
+"Virol B","C19994"
+"Vomitoxin","C09747"
+"Wasp kinins",
+"Yessotoxin","C16872"
+"Zearalenone","C09981"

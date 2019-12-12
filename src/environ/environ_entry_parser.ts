@@ -1,7 +1,7 @@
-import alternativeNamesParser from "./alternativeNamesPraser"
-import { briteParser } from "./briteParser"
-import dblinksParser from "./dblinksParser"
-import drugNameParser from "./environ/environ_name_parser"
+import { briteParser } from "../entry_parsers/brite_parser"
+import dblinksParser from "../entry_parsers/db_links_parser"
+import environNameParser from "./environ_name_parser"
+import alternativeNamesParser from "./major_comonent_additional_names_parser"
 
 const keggObjectParser = async (rawKeggObject: string) => {
     const keggObject: any = {}
@@ -41,24 +41,24 @@ const keggObjectParser = async (rawKeggObject: string) => {
             }
 
             case "name": {
-                keggObject[ label ] = drugNameParser(content[ 0 ])
+                keggObject[ label ] = environNameParser(content[ 0 ])
                 continue
             }
 
             case "category": {
-                keggObject[ label ] = drugNameParser(content[ 0 ])
+                keggObject[ label ] = environNameParser(content[ 0 ])
                 continue
             }
 
             case "component": {
                 const components = content[ 0 ].split(", ")
-                keggObject[ label ] = components.map((component) => drugNameParser(component))
+                keggObject[ label ] = components.map((component) => environNameParser(component))
                 continue
             }
 
             case "source": {
                 const components = content[ 0 ].split(",")
-                keggObject[ label ] = components.map((component) => drugNameParser(component))
+                keggObject[ label ] = components.map((component) => environNameParser(component))
                 continue
             }
 

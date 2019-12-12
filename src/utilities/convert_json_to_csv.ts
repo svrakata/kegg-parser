@@ -3,7 +3,7 @@ import { Parser } from "json2csv"
 type TConvertJSONToCSV = (json: any, fields?: string[]) => string
 
 const convertJSONToCSV: TConvertJSONToCSV = (json: any, fields = null) => {
-    const options = { fields, quote: "" }
+    const options = { fields }
     let csv
 
     try {

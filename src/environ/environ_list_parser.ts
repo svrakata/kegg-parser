@@ -1,6 +1,5 @@
 import convertJSONToCSV from "../utilities/convert_json_to_csv"
 import environNameParser, { IEnvironName } from "./environ_name_parser"
-import { IGetEnvironListOutputType } from "./get_environ_list"
 
 export interface IEnvironListItem {
     id: string
@@ -21,7 +20,7 @@ const parseEntryContent = (names: string) => {
         .map((entryName) => environNameParser(entryName))
 }
 
-const environListParser = (list: string, outputType: IGetEnvironListOutputType) => {
+const environListParser = (list: string) => {
     // get each new line as separate entry
     const entries = list.trim().split("\n")
 
@@ -34,21 +33,6 @@ const environListParser = (list: string, outputType: IGetEnvironListOutputType) 
                 name: entryNames,
             }
         })
-
-    if (outputType === "csv") {
-
-        // transform the data so it can be parsed to CSV
-        const flattenEntries = parsedEntries
-            .reduce((initial, entry) => {
-                const { id, name } = entry
-                return initial.concat(name.map((n) => ({ id, name: `${n.text}` })))
-            }, [])
-        return convertJSONToCSV(flattenEntries, [ "id", "name" ])
-    }
-
-    if (outputType === "json") {
-        return JSON.stringify(parsedEntries)
-    }
 
     return parsedEntries
 }
