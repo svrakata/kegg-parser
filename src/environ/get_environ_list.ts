@@ -23,9 +23,11 @@ const getEnvironList: TGetEnvironList = async (options = null) => {
         const flattenEntries = parsedEntries
             .reduce((initial, entry) => {
                 const { id, name } = entry
-                return initial.concat(name.map((n) => ({ id, name: `${n.text}` })))
+                return initial.concat(name.map((n) => ({ name: `${n.text}`, id })))
             }, [])
-        return convertJSONToCSV(flattenEntries, [ "id", "name" ])
+            .sort((a, b) => a.name.localeCompare(b.name))
+
+        return convertJSONToCSV(flattenEntries, [ "name", "id" ])
     }
 
     if (outputType === "json") {

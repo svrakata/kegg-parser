@@ -1,6 +1,6 @@
 import convertJSONToCSV from "../../utilities/convert_json_to_csv"
 import getBriteCategoryList from "../get_brite_category_list"
-import britePesticidesParser, { IBritePesticideEntry } from "./brite_pesticides_parser"
+import briteEndoDisruptiveCompsParser, { IBritreEndoDisruptiveCompsEntry } from "./brite_endocrine_disrupting_compounds_parser"
 
 export type TOutputType = "csv" | "json"
 
@@ -11,12 +11,11 @@ interface IGetBriteEndoDisruptiveCompsOptions {
 // tslint:disable-next-line: max-line-length
 type TGetEndoDisruptiveComps = (options?: IGetBriteEndoDisruptiveCompsOptions) => Promise<IBritreEndoDisruptiveCompsEntry[] | string>
 
-const getEndoDisrupticeComps: TGetEndoDisruptiveComps = async (options = null) => {
+const getEndoDisruptiveComps: TGetEndoDisruptiveComps = async (options = null) => {
     const outputType = options ? options.outputType : null
     const briteID = "br:br08006"
-    const pesticidesList = await getBriteCategoryList(briteID)
-    const endoDisruptiveComps = britePesticidesParser(pesticidesList)
-
+    const endoDisruptiveCompsList = await getBriteCategoryList(briteID)
+    const endoDisruptiveComps = briteEndoDisruptiveCompsParser(endoDisruptiveCompsList)
 
     if (outputType === "csv") {
         return convertJSONToCSV(endoDisruptiveComps, [ "name", "code" ])
@@ -30,4 +29,4 @@ const getEndoDisrupticeComps: TGetEndoDisruptiveComps = async (options = null) =
     return endoDisruptiveComps
 }
 
-export default getEndoDisrupticeComps
+export default getEndoDisruptiveComps
