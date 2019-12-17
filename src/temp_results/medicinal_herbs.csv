@@ -1,0 +1,165 @@
+"name","code","components"
+"Algae",,
+"Apiaceae",,
+"Aquifoliaceae",,
+"Araliaceae",,
+"Arecaceae",,
+"Ascomycetes",,
+"Asteraceae",,
+"Basidiomycetes",,
+"Betulaceae",,
+"Bignoniaceae",,
+"Boraginaceae",,
+"Brassicaceae",,
+"Brown algae",,
+"Burseraceae",,
+"Caprifoliaceae",,
+"Cucurbitaceae",,
+"Dicot plants: asterids",,
+"Dicot plants: others",,
+"Dicot plants: rosids",,
+"Ephedraceae",,
+"Equisetaceae",,
+"Ericaceae",,
+"Fabaceae",,
+"Fungi",,
+"Ginkgoaceae",,
+"Grossulariaceae",,
+"Hamamelidaceae",,
+"Hypericaceae",,
+"Iridaceae",,
+"Lamiaceae",,
+"Lauraceae",,
+"Liliaceae",,
+"Linaceae",,
+"Malvaceae",,
+"Meliaceae",,
+"Monocot plants",,
+"Moraceae",,
+"Myrtaceae",,
+"Naked-seed plants",,
+"Oleaceae",,
+"Onagraceae",,
+"Other flowering plants",,
+"Passifloraceae",,
+"Pedaliaceae",,
+"Piperaceae",,
+"Plantaginaceae",,
+"Poaceae",,
+"Primulaceae",,
+"Pteridophytes",,
+"Ranunculaceae",,
+"Rosaceae",,
+"Rubiaceae",,
+"Rutaceae",,
+"Salicaceae",,
+"Santalaceae",,
+"Sapindaceae",,
+"Scrophulariaceae",,
+"Solanaceae",,
+"Theaceae",,
+"Urticaceae",,
+"Valerianaceae",,
+"Verbenaceae",,
+"Vitaceae",,
+"Zingiberaceae",,
+"American ginseng","E00406",
+"Angelica","E00759",
+"Arnica","E00758",
+"Artichoke","E00756","[{""name"":""Cynarin"",""code"":[""CPD:C10445""]}]"
+"Bearberry","E00058","[{""name"":""Arbutin"",""code"":[""CPD:C06186""]}]"
+"Bilberry","E00804",
+"Birch","E00796",
+"Bitter gourd","E00794",
+"Bitter orange peel","E00031","[{""name"":""Limonene"",""code"":[""CPD:C06078""]}]"
+"Black cohosh","E00808",
+"Black currant","E00807",
+"Bladderwrack","E00806",
+"Burdock root","E00797","[{""name"":""Inulin"",""code"":[""CPD:C03323""]}]"
+"Butterbur","E00800","[{""name"":""Petasin"",""code"":[""CPD:C09706""]}]"
+"Cat's claw","E00773","[{""name"":""Mitraphylline"",""code"":[""CPD:C09227""]}]"
+"Cayenne papper","E00014","[{""name"":""Capsaicin"",""code"":[""CPD:C06866""]}]"
+"Chaste berry","E00789",
+"Cinnamon","E00566",
+"Cloves","E00018","[{""name"":""Eugeniin"",""code"":[""CPD:C10224""]}]"
+"Coltsfoot","E00778",
+"Comfrey","E00779","[{""name"":""Allantoin"",""code"":[""CPD:C01551""]}]"
+"Corn silk","E00329",
+"Cranberry","E00775","[{""name"":""Ascorbate"",""code"":[""CPD:C00072""]}]"
+"Dandelion","E00788",
+"Devil's claw","E00792","[{""name"":""Harpagoside"",""code"":[""CPD:C09783""]}]"
+"Echinacea","E00764",
+"Elder flowers","E00765",
+"Eleuthero","E00180","[{""name"":""Eleutheroside"",""code"":[""CPD:C01533"",""C20785"",""C20786""]}]"
+"Ephedra","E00160","[{""name"":""Ephedrine"",""code"":[""CPD:C01575""]}]"
+"Eucalayptus","E00825",
+"Evening promrose","E00761","[{""name"":""Linoleate"",""code"":[""CPD:C01595""]}]"
+"Fennel","E00057","[{""name"":""Anethole"",""code"":[""CPD:C10428""]}]"
+"Fenugreek","E00273",
+"Feverfew","E00805","[{""name"":""Parthenolide"",""code"":[""CPD:C07609""]}]"
+"Flaxseed","E00446","[{""name"":""Linolenic"",""code"":[""CPD:C06426"",""C06427""]}]"
+"Garlic","E00769","[{""name"":""Alliin"",""code"":[""CPD:C08265""]}]"
+"German chamomile","E00781","[{""name"":""alpha-Bisabolol"",""code"":[""CPD:C09621""]},{""name"":""Chamazulene"",""code"":[""CPD:C09633""]}]"
+"Ginger","E00115","[{""name"":""Gingerol"",""code"":[""CPD:C10462"",""C17495"",""C17496""]}]"
+"Ginkgo","E00760","[{""name"":""Ginkgolide"",""code"":[""CPD:C07601"",""C07602"",""C07603"",""C07604"",""C16816""]},{""name"":""Bilobalide"",""code"":[""CPD:C07605""]}]"
+"Ginseng","E00790",
+"Goldenseal","E00777","[{""name"":""Berberine"",""code"":[""CPD:C00757""]},{""name"":""Hydrastine"",""code"":[""CPD:C13799""]}]"
+"Grape seed","E00776",
+"Guarana","E00771","[{""name"":""Caffeine"",""code"":[""CPD:C07481""]}]"
+"Hawthorn","E00813",
+"Heath","E00803",
+"Hemp","E00162","[{""name"":""Palmitic"",""code"":[""CPD:C00249""]}]"
+"Horse chestnut","E00812","[{""name"":""Aescin"",""code"":[""CPD:C08921""]}]"
+"Horsetail","E00782",
+"Iceland moss","E00757","[{""name"":""Lichenin"",""code"":[""CPD:C00478""]}]"
+"Java tea","E00774",
+"Kava","E00770",
+"Lavender","E00827","[{""name"":""Linalyl"",""code"":[""CPD:C09863""]}]"
+"Lemon balm","E00831",
+"Lemon grass","E00830","[{""name"":""Citral"",""code"":[""CPD:C01499"",""C09847""]}]"
+"Lemon verbena","E00811",
+"Licorice","E00027","[{""name"":""Glycyrrhizin"",""code"":[""CPD:C02284""]}]"
+"Linden flower","E00828",
+"Maca","E00816",
+"Maitake","E00815","[{""name"":""1,3-beta-D-Glucan"",""code"":[""CPD:C00965""]}]"
+"Mallow flowers","E00763",
+"Marigold","E00772",
+"Marshmallow","E00817",
+"Melilot","E00823",
+"Milk thistle","E00822","[{""name"":""Silymarin"",""code"":[""CPD:C07610""]}]"
+"Mistletoe","E00821",
+"Mulberry","E00819","[{""name"":""Deoxynojirimycin"",""code"":[""CPD:C16843""]}]"
+"Mullein","E00820",
+"Myrrh","E00313",
+"Neem","E00793","[{""name"":""Oleic"",""code"":[""CPD:C00712""]}]"
+"Nettle","E00795",
+"Oats","E00766",
+"Olive","E00767","[{""name"":""Oleuropein"",""code"":[""CPD:C09794""]}]"
+"Orange flowers","E00768",
+"Paraguay tea","E00818",
+"Passionflower","E00801",
+"Pau D'Arco","E00799","[{""name"":""Lapachol"",""code"":[""CPD:C10366""]}]"
+"Peppermint ","E00810","[{""name"":""l-Menthol"",""code"":[""CPD:C00400""]}]"
+"Primrosa","E00809",
+"Psylla","E00780",
+"Pumpkin seed","E00802","[{""name"":""Stigmasterol"",""code"":[""CPD:C05442""]}]"
+"Raspberry leaf","E00826",
+"Red sorrel","E00798",
+"Rooibos","E00829",
+"Rose","E00832",
+"Rose hip","E00833","[{""name"":""Ascorbate"",""code"":[""CPD:C00072""]}]"
+"Rosemary","E00834","[{""name"":""Rosmarinate"",""code"":[""CPD:C01850""]}]"
+"Saffron","E00003","[{""name"":""Crocin"",""code"":[""CPD:C08589""]}]"
+"Sage","E00783","[{""name"":""Thujone"",""code"":[""CPD:C09906""]}]"
+"Saw palmetto","E00785",
+"Senna","E00122","[{""name"":""Sennoside"",""code"":[""CPD:C10404"",""C13526"",""C16797"",""C16798""]}]"
+"Soy bean","E00786",
+"St. John's wort","E00784","[{""name"":""Hypericin"",""code"":[""CPD:C07606""]}]"
+"Tea","E00254",
+"Tea tree","E00791","[{""name"":""Terpineol-4"",""code"":[""CPD:C17073""]}]"
+"Thyme","E00787","[{""name"":""Thymol"",""code"":[""CPD:C09908""]}]"
+"Turmeric","E00069","[{""name"":""Curcumin"",""code"":[""CPD:C10443""]}]"
+"Valerian","E00318",
+"Willow","E00814","[{""name"":""Salicin"",""code"":[""CPD:C01451""]}]"
+"Witch hazel","E00762",
+"Yarrow","E00824",

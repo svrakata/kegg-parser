@@ -13,7 +13,6 @@ const convertJSONToCSV: TConvertJSONToCSV = (json: any, fields = null) => {
         console.error(err)
     }
 
-
     return csv
 }
 
