@@ -67,6 +67,8 @@ const load = async () => {
         })
     }
 
+    fs.writeFileSync(path.resolve(__dirname, "temp_results", "environ_lkk.csv"), environList)
+
     // fs.writeFileSync(path.resolve(__dirname, "temp_results", "medicinal_herbs.csv"), medicinalHerbsList)
     // fs.writeFileSync(path.resolve(__dirname, "temp_results", "environ_list.csv"), environList)
     // fs.writeFileSync(path.resolve(__dirname, "temp_results", "natural_toxins.csv"), naturalToxinsList)

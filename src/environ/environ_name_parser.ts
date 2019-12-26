@@ -35,9 +35,7 @@ const environNameParser: TEnvironNameParser = (environName) => {
         result.code = code
     }
 
-    // removes commas from some odd definitions in names that break the csv construction
-    result.text = text.trim().replace(",", "")
-
+    result.text = text.trim()
     return result
 }
 

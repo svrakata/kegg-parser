@@ -16,7 +16,11 @@ const splitEntry = (entry: string) => {
 const parseEntryContent = (names: string) => {
     return names
         .split(";")
-        .map((entryName) => environNameParser(entryName))
+        .reduce((accumulator, entryName) => {
+            const nameVariations = entryName.split(", ")
+            return accumulator.concat(nameVariations)
+        }, [])
+        .map((name) => environNameParser(name))
 }
 
 const environListParser = (list: string) => {
