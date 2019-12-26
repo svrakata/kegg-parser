@@ -60,6 +60,7 @@ const load = async () => {
     const herbsWriteStream = fs.createWriteStream(path.resolve(__dirname, "temp_results", "medicinal_herbs_names_only.csv"))
     herbsWriteStream.write(`"name"\n`)
 
+    // the check for array comes in case the output is a csv string
     if (Array.isArray(medicinalHerbsList)) {
         medicinalHerbsList.map((herb) => {
             herbsWriteStream.write(`"${herb.name}"\n`)

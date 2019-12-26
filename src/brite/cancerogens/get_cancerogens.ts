@@ -16,16 +16,11 @@ const getCancerogens: TGetCancerogens = async (options = null) => {
     const cancerogensEntries = briteCancerogensParser(cancerogensList)
 
     if (outputType === "csv") {
-        const flattedEntries = cancerogensEntries
-            .map((entry: any) => {
-                if (entry.cancer_site) {
-                    entry.cancer_site = entry.cancer_site.join(";")
-                }
-                return entry
-            })
-
-        // tslint:disable-next-line: max-line-length
-        return convertJSONToCSV(cancerogensEntries.sort((a: any, b) => a.name.localeCompare(b.name)), [ "name", "category", "code", "cancer_site" ])
+        return convertJSONToCSV(
+            cancerogensEntries
+                .sort((a: any, b) => a.name.localeCompare(b.name)),
+            [ "name", "category", "code", "cancer_site" ]
+        )
     }
 
     if (outputType === "json") {

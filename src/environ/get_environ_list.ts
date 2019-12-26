@@ -19,7 +19,7 @@ const getEnvironList: TGetEnvironList = async (options = null) => {
     const parsedEntries = environListParser(environList)
 
     if (outputType === "csv") {
-        // transform the data so it can be parsed to CSV
+        // transforms the data so it can be parsed to CSV
         const flattenEntries = parsedEntries
             .reduce((initial, entry) => {
                 const { id, name } = entry

@@ -9,5 +9,3 @@ const getBriteCategoryList: TGetBriteCategoryList = async (categoryID) => {
 }
 
 export default getBriteCategoryList
-
-
