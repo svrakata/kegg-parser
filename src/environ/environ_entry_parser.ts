@@ -1,7 +1,7 @@
 import { briteParser } from "../entry_parsers/brite_parser"
 import dblinksParser from "../entry_parsers/db_links_parser"
 import environNameParser from "./environ_name_parser"
-import alternativeNamesParser from "./major_component_additional_names_parser"
+import alternativeNamesParser from "./major_component_alternative_names_parser"
 
 const keggObjectParser = async (rawKeggObject: string) => {
     const keggObject: any = {}

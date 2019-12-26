@@ -54,7 +54,7 @@ const briteMedicinalHerbsParser: TBriteMedicinalHerbsParser = (medicinalHerbs) =
         })
         .sort((a, b) => a.name.localeCompare(b.name))
 
-    const endoDisruptiveCompsEntries = compounds
+    const endoDisruptiveCompsEntries = compounds // and cateories eventually
     return endoDisruptiveCompsEntries
 }
 

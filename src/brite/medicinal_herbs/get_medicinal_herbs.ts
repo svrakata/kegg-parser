@@ -8,8 +8,9 @@ interface IGetMedicinalHerbs {
     outputType: TOutputType
 }
 
-// tslint:disable-next-line: max-line-length
-type TGetEndoDisruptiveComps = (options?: IGetMedicinalHerbs) => Promise<IBriteMedicinalHerbsEntry[] | string>
+type TGetEndoDisruptiveComps = (
+    options?: IGetMedicinalHerbs
+) => Promise<IBriteMedicinalHerbsEntry[] | string>
 
 const getMedicinalHerbs: TGetEndoDisruptiveComps = async (options = null) => {
     const outputType = options ? options.outputType : null
@@ -18,13 +19,13 @@ const getMedicinalHerbs: TGetEndoDisruptiveComps = async (options = null) => {
     const endoDisruptiveComps = briteMedcinalHerbsParser(endoDisruptiveCompsList)
 
     if (outputType === "csv") {
+        // flatten the components and add them to data. gonna need it
         return convertJSONToCSV(endoDisruptiveComps, [ "name", "code", "components" ])
     }
 
     if (outputType === "json") {
         return JSON.stringify(endoDisruptiveComps)
     }
-
 
     return endoDisruptiveComps
 }
