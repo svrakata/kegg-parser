@@ -41,7 +41,6 @@ import path from "path"
 
 // load()
 
-
 import getCancerogens from "./brite/cancerogens/get_cancerogens"
 import getEndoDisruptiveComps from "./brite/endocrine_disrupting_compounds/get_endocrine_disrupting_compounds"
 import getMedicinalHerbs from "./brite/medicinal_herbs/get_medicinal_herbs"
@@ -57,7 +56,7 @@ const load = async () => {
     // const endoDisruptiveCompsList = await getEndoDisruptiveComps({ outputType: "csv" })
     const medicinalHerbsList = await getMedicinalHerbs()
     // tslint:disable-next-line: max-line-length
-    const herbsWriteStream = fs.createWriteStream(path.resolve(__dirname, "temp_results", "medicinal_herbs_names_only.csv"))
+    const herbsWriteStream = fs.createWriteStream(path.resolve(__dirname, "parsed_data", "medicinal_herbs_names_only.csv"))
     herbsWriteStream.write(`"name"\n`)
 
     // the check for array comes in case the output is a csv string
