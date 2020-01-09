@@ -43,6 +43,7 @@ import path from "path"
 
 import getCancerogens from "./brite/cancerogens/get_cancerogens"
 import getEndoDisruptiveComps from "./brite/endocrine_disrupting_compounds/get_endocrine_disrupting_compounds"
+import getHumanDiseases from "./brite/human_diseases/get_human_diseases"
 import getMedicinalHerbs from "./brite/medicinal_herbs/get_medicinal_herbs"
 import getPesticides from "./brite/pesticides/get_pesticides"
 import getNaturalToxins from "./brite/toxins/get_natural_toxins"
@@ -54,17 +55,20 @@ const load = async () => {
     // const cancerogensList = await getCancerogens({ outputType: "csv" })
     // const pesticidesList = await getPesticides({ outputType: "csv" })
     // const endoDisruptiveCompsList = await getEndoDisruptiveComps({ outputType: "csv" })
-    const medicinalHerbsList = await getMedicinalHerbs()
+    // const medicinalHerbsList = await getMedicinalHerbs()
     // tslint:disable-next-line: max-line-length
-    const herbsWriteStream = fs.createWriteStream(path.resolve(__dirname, "parsed_data", "medicinal_herbs_names_only.csv"))
-    herbsWriteStream.write(`"name"\n`)
+    // const herbsWriteStream = fs.createWriteStream(path.resolve(__dirname, "parsed_data", "medicinal_herbs_names_only.csv"))
+    // herbsWriteStream.write(`"name"\n`)
 
     // the check for array comes in case the output is a csv string
-    if (Array.isArray(medicinalHerbsList)) {
-        medicinalHerbsList.map((herb) => {
-            herbsWriteStream.write(`"${herb.name}"\n`)
-        })
-    }
+    // if (Array.isArray(medicinalHerbsList)) {
+    //     medicinalHerbsList.map((herb) => {
+    //         herbsWriteStream.write(`"${herb.name}"\n`)
+    //     })
+    // }
+
+    const humanDiseases = await getHumanDiseases({ outputType: "csv" })
+    fs.writeFileSync(path.resolve(__dirname, "parsed_data", "human_diseases.csv"), humanDiseases)
 
     // fs.writeFileSync(path.resolve(__dirname, "temp_results", "environ_lkk.csv"), environList)
 
