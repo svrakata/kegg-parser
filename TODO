@@ -2,10 +2,16 @@ Refactoring:
     ☐ ALL --- Environ entry parser, Brite entry prop parser
     ☐ Brite list + toxsins
     ☐ Need to do the toxins parsing
+    ☐ NEED to combine logic for brite categories and parsers
+    ☐ Need to fix the csv output type option to return same type as other outputs or change the logic, or separate it as method .getCSV
 
     How to structure the data:
         ☐ Toxins
 
+
+
+
+        
 
             [
                 {

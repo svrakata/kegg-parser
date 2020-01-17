@@ -11,18 +11,17 @@ const briteEndoDisruptiveCompsParser: TBriteEndoDisruptiveCompsParser = (endoDis
     const entries = endoDisruptiveCompsList
         .split("\n")
 
-
     const categories = entries
         .filter((entry) => categoriesIdentifiers.includes(entry[ 0 ]))
         .map((category) => {
             const name = category.substring(1).trim()
             return {
+                code: "",
                 name,
             }
         })
+        .filter((category) => ![ "other", "others" ].includes(category.name.toLowerCase()))
         .sort((a, b) => a.name.localeCompare(b.name))
-
-
 
     const compounds = entries
         .filter((entry) => compoundsIdentifier === entry[ 0 ])
@@ -33,8 +32,8 @@ const briteEndoDisruptiveCompsParser: TBriteEndoDisruptiveCompsParser = (endoDis
                 .split("  ")
 
             return {
-                name: name.replace(/ \([a-zA-Z\s0-9]*\)/g, ""),
                 code,
+                name: name.replace(/ \([a-zA-Z\s0-9]*\)/g, ""),
             }
         })
         .sort((a, b) => a.name.localeCompare(b.name))

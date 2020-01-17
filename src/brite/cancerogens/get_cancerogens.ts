@@ -1,5 +1,5 @@
 import convertJSONToCSV from "../../utilities/convert_json_to_csv"
-import getBriteCategoryList from "../get_brite_category_list"
+import getBriteCategoryList from "../get_brite_list"
 import { TOutputType } from "../toxins/get_natural_toxins"
 import briteCancerogensParser, { IBriteCancerogenEntry } from "./brite_cancerogens_parser"
 
@@ -18,8 +18,16 @@ const getCancerogens: TGetCancerogens = async (options = null) => {
     if (outputType === "csv") {
         return convertJSONToCSV(
             cancerogensEntries
+                .map(({ name, category, code, cancer_site }) => {
+                    return {
+                        cancer_site: cancer_site && cancer_site.join(";") || "",
+                        category,
+                        code,
+                        name,
+                    }
+                })
                 .sort((a: any, b) => a.name.localeCompare(b.name)),
-            [ "name", "category", "code", "cancer_site" ]
+            [ "name", "category", "code", "cancer_site" ],
         )
     }
 

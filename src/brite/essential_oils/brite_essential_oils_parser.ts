@@ -1,14 +1,15 @@
-export interface IBriteMedicinalHerbsEntry {
+export interface IBriteEssOilsEntry {
     name: string[] | string
     code?: string
+    components?: Array<{ name: string, code?: string }>
 }
 
-type TBriteMedicinalHerbsParser = (medicinalHerbs: string) => IBriteMedicinalHerbsEntry[]
+type TBriteEssOilsParser = (oilsList: string) => IBriteEssOilsEntry[]
 
-const briteMedicinalHerbsParser: TBriteMedicinalHerbsParser = (medicinalHerbs) => {
+const briteEssentialOilsParser: TBriteEssOilsParser = (oilsList: string) => {
     const categoriesIdentifiers = [ "A", "B" ]
-    const compoundsIdentifier = "C"
-    const entries = medicinalHerbs
+    const entriesIdentifier = "C"
+    const entries = oilsList
         .split("\n")
 
     const categories = entries
@@ -21,11 +22,11 @@ const briteMedicinalHerbsParser: TBriteMedicinalHerbsParser = (medicinalHerbs) =
         })
         .sort((a, b) => a.name.localeCompare(b.name))
 
-    const compounds = entries
-        .filter((entry) => compoundsIdentifier === entry[ 0 ])
-        .map((compound) => {
-            const mappedCompound: any = {}
-            const [ code, fullName ] = compound
+    const parsedEntries = entries
+        .filter((entry) => entriesIdentifier === entry[ 0 ])
+        .map((entry) => {
+            const mappedEntry: any = {}
+            const [ code, fullName ] = entry
                 .substring(1)
                 .trim()
                 .split("  ")
@@ -36,26 +37,24 @@ const briteMedicinalHerbsParser: TBriteMedicinalHerbsParser = (medicinalHerbs) =
                 const majorComponentList = majorComponents
                     .split(", ")
                     .map((component) => {
-                        const compCodes = component.match(/\[.+\]/gi)[ 0 ]
+                        const compCodes = component.match(/\[.+\]/gi)
                         const compName = component.split(" ", 1)[ 0 ]
 
                         return {
-                            code: compCodes.replace(/\[|\]/gi, "").split(" "),
+                            code: compCodes && compCodes[ 0 ].replace(/\[|\]/gi, "").split(" "),
                             name: compName,
                         }
                     })
-                mappedCompound.components = majorComponentList
+                mappedEntry.components = majorComponentList
             }
 
-            mappedCompound.name = name
-            mappedCompound.code = code
+            mappedEntry.name = name
+            mappedEntry.code = code
 
-            return mappedCompound
+            return mappedEntry
         })
         .sort((a, b) => a.name.localeCompare(b.name))
-
-    const endoDisruptiveCompsEntries = compounds // and cateories eventually
-    return endoDisruptiveCompsEntries
+    return parsedEntries
 }
 
-export default briteMedicinalHerbsParser
+export default briteEssentialOilsParser

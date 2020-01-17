@@ -1,5 +1,5 @@
-import baseURL from "./../base_URL"
-import get from "./../request/get"
+import baseURL from "../base_URL"
+import get from "../request/get"
 
 type TGetBriteCategoryList = (categoryID: string) => Promise<string>
 

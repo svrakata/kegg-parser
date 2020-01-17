@@ -19,7 +19,19 @@ const britePesticidesParser: TBritePesticidesParser = (pesticidesList) => {
             (entry) => entry[ 0 ] === compoundsIdentifier,
         )
 
-    const parsedCategories = categories.map((category) => ({ name: category.substring(1).trim() }))
+    const parsedCategories = categories
+        .map((category) => ({ name: category.substring(1).trim(), code: "" }))
+        .filter((category) => ![ "other", "others" ].includes(category.name.toLowerCase()))
+        .reduce((accum, category) => {
+            const map = {}
+            if (!map.hasOwnProperty(category.name)) {
+                map[ category.name ] = 1
+                accum.push(category)
+            }
+            return accum
+        }, [])
+
+
     const parsedCompounds = compounds.map((compound) => {
         const [ code, name ] = compound
             .substring(1)
@@ -31,6 +43,7 @@ const britePesticidesParser: TBritePesticidesParser = (pesticidesList) => {
     const parsedEntries = parsedCategories
         .concat(parsedCompounds)
         .sort((a, b) => a.name.localeCompare(b.name))
+
     return parsedEntries
 }
 

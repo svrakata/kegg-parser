@@ -6,27 +6,35 @@ export interface IBriteToxinEntry {
 type TBriteNaturalToxinsParser = (toxinsList: string) => IBriteToxinEntry[]
 
 const briteNaturalToxinsParser: TBriteNaturalToxinsParser = (toxinsList: string) => {
-    let entries = toxinsList.trim().split("\n")
+    const categoriesIdentifiers = [ "A", "B", "C" ]
+    const entryIdentifiers = [ "D" ]
+    const categoriesFilter = [ "toxins", "Fumonisins", "venoms" ]
 
-    entries = entries.slice(2, entries.length)
-    entries = entries.slice(0, entries.indexOf("!"))
+    const entries = toxinsList.trim().split("\n")
+    const categories = entries
+        .filter((entry) => categoriesIdentifiers.includes(entry[ 0 ]))
+        .map((category) => {
+            const name = category.substring(1).replace(/\(.+\)/gi, "").trim()
+            return {
+                code: "",
+                name: [ name ],
+            }
+        })
+        .filter(({ name }) => categoriesFilter
+            .some((filterWord) => name[ 0 ].toLowerCase().indexOf(filterWord.toLowerCase()) > -1))
+        .sort((a, b) => a.name[ 0 ].localeCompare(b.name[ 0 ]))
 
     const parsedEntries = entries
+        .filter((entry) => entryIdentifiers.includes(entry[ 0 ]))
         .map((entry) => {
-            if (entry[ 0 ] === "D") {
-                const [ code, name ] = entry.substring(7).split("  ")
-                return {
-                    code,
-                    name: name.split("; "),
-                }
-            } else {
-                return {
-                    name: entry.substring(1).trim().split("; "),
-                }
+            const [ code, name ] = entry.substring(7).split("  ")
+            return {
+                code,
+                name: name.split("; "),
             }
         })
 
-    return parsedEntries
+    return [ ...parsedEntries, ...categories ]
 }
 
 export default briteNaturalToxinsParser

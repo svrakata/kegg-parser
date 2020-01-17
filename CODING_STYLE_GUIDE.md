@@ -21,3 +21,5 @@ This [article](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-
 * Version control
 * TDD
 * Integration (prod vs dev)
+* Architecture
+* Tools

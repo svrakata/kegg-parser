@@ -1,5 +1,5 @@
 import convertJSONToCSV from "../../utilities/convert_json_to_csv"
-import getBriteCategoryList from "../get_brite_category_list"
+import getBriteCategoryList from "../get_brite_list"
 import briteNaturalToxinsParser, { IBriteToxinEntry } from "./brite_natural_toxins_parser"
 
 export type TOutputType = "csv" | "json"

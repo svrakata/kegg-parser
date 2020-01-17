@@ -1,5 +1,5 @@
 import convertJSONToCSV from "../../utilities/convert_json_to_csv"
-import getBriteCategoryList from "../get_brite_category_list"
+import getBriteCategoryList from "../get_brite_list"
 import briteHumanDiseasesParser, { IBriteHumanDiseasesEntry } from "./brite_human_diseases_parser"
 
 type TOutputType = "csv" | "json"
@@ -25,7 +25,9 @@ const getHumanDiseases: TGetHumanDiseases = async (options = null) => {
     }
 
     if (outputType === "json") {
-        return JSON.stringify(humanDiseasesEntries)
+        return JSON.stringify(
+            humanDiseasesEntries.sort((a: any, b:  ) => a.name.localeCompare(b.name)),
+        )
     }
 
     return humanDiseasesEntries

@@ -1,7 +1,7 @@
 export interface IBriteCancerogenEntry {
     code?: string
     name: string[] | string
-    cancer_site?: string
+    cancer_site?: string[]
     category: string
 }
 

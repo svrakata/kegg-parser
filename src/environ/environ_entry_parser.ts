@@ -112,7 +112,7 @@ const keggObjectParser = async (rawKeggObject: string) => {
         keggObject.component = newComponents
     }
 
-    console.log(`Keg entry with name: ${keggObject.name.text[ 0 ]} has been parsed.`)
+    console.log(`Keg entry with name: ${keggObject.name.text} has been parsed.`)
     return keggObject
 }
 
