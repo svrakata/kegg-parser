@@ -1,6 +1,9 @@
 import baseURL from "../base_URL"
 import get from "../request/get"
 
+// no point of this
+// still the brite parsing variates and must be customized
+
 interface IBriteEntry {
     code?: string
     name: string
@@ -23,19 +26,9 @@ class BriteParser {
         const briteList = await this.getBriteList(briteID)
 
         const lines = briteList.split("\n")
-        const rawEntries = lines.
 
 
-            // gets the list
-            // parse it
-
-            return {
-                csv:  () => {
-
-                }, 
-        }
-
-}
+    }
 
 
 
